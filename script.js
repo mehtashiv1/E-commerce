@@ -2,6 +2,7 @@ const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
 const close = document.getElementById('close');
 
+//login
 const loginButton = document.getElementById('login-btn');
 const emailField = document.getElementById('email-field');
 const passwordField = document.getElementById('password-field');
@@ -64,12 +65,12 @@ ok.addEventListener("click", () => {
 });
 
 
-
+//login
 loginButton.addEventListener('click', () => {
   const email = emailField.value;
   const password = passwordField.value;
 
-  fetch('/login', {
+  fetch('http://localhost:5500/login', {
     method: 'POST',
     body: JSON.stringify({ email, password }),
     headers: { 'Content-Type': 'application/json' },
@@ -77,8 +78,7 @@ loginButton.addEventListener('click', () => {
     .then(response => response.json())
     .then(data => {
       if (data.success) {
-        // redirect to dashboard or home page
-        window.location.href = '/blog';
+            window.location.href = 'http://localhost:5500/index';
       } else {
         alert(data.message);
       }
