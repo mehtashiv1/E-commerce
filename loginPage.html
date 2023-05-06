@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="https://kit.fontawesome.com/f00bf488cf.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="login-body">
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your Email" required>
+                        <i class="uil uil-envelope-alt icon"></i>
+                    </div> 
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showPass"></i>
+                    </div> 
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="#" class="text">Forgot Password?</a>
+                    </div> 
+                    <div class="input-field button">
+                        <input type="button" value="Login Now">
+                    </div>   
+                    <div class="login-signup">
+                        <span class="text">Not a member?</span>
+                        <a href="#" class="text signup-text">Signup Now</a>
+                    </div>
+                </form>
+            </div>
+
+            <!--registration form */-->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your Email" required>
+                        <i class="uil uil-envelope-alt icon"></i>
+                    </div> 
+                    <div class="input-field">
+                        <input type="password" class = "password" placeholder="Create your password" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div> 
+                    <div class="input-field">
+                        <input type="password" class = "password" placeholder="Confirm password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showPass"></i>
+                    </div> 
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
+                        </div>
+
+                        <a href="#" class="text">Forgot Password?</a>
+                    </div> 
+                    <div class="input-field button">
+                        <input type="button" value="SignUp Now" onclick="openPopup()">
+                    </div>   
+                    <div class="login-signup">
+                        <span class="text">Already a member?</span>
+                        <a href="#" class="text login-link">Login Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="popup" id="popup">
+            <img src="images/404-tick.png">
+            <h2>Thank you!</h2>
+            <p>Successfully registered now you can login.</p>
+            <button class="popup-btn" type="button" onclick="closePopup()">OKAY!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
