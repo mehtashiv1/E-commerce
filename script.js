@@ -1,6 +1,11 @@
 const bar = document.getElementById('bar');
 const nav = document.getElementById('navbar');
 const close = document.getElementById('close');
+
+//login
+const loginButton = document.getElementById('login-btn');
+const emailField = document.getElementById('email-field');
+const passwordField = document.getElementById('password-field');
 if (bar) { 
     bar.addEventListener('click', () => {
         nav.classList.add('active');
@@ -57,4 +62,26 @@ function closePopup(){
 const ok = document.querySelector(".popup-btn");
 ok.addEventListener("click", () => {
     container.classList.remove("active");
+});
+
+
+//login
+loginButton.addEventListener('click', () => {
+  const email = emailField.value;
+  const password = passwordField.value;
+
+  fetch('http://localhost:5500/login', {
+    method: 'POST',
+    body: JSON.stringify({ email, password }),
+    headers: { 'Content-Type': 'application/json' },
+  })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+            window.location.href = 'http://localhost:5500/index';
+      } else {
+        alert(data.message);
+      }
+    })
+    .catch(error => console.error(error));
 });
