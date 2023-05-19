@@ -10,15 +10,23 @@
 </head>
 <body>
     <section id="header">
-        <a href="index.html"><img src="images/logo.png" id="logo" ref=""></a> 
+        <a href="#"><img src="images/logo.png" id="logo" ref=""></a> 
         <div>
             <ul id="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a class = "active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag" style="color: #070708;"></i></a></li>
+                <li><div class="user">
+                        <i id="user-account"  class="far fa-user"></i>
+                        <div class="user-icon-popup">
+                            <p>Login to your account</p>
+                            <a>Login</a>
+                        </div>
+                    </div>
+                </li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -30,15 +38,42 @@
         </div>
     </section>
 
-    <section id="page-header">
-        <h2>#stayhome</h2>
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
         <p>Save more with coupons & upto 70% off</p>
+        <a href="shop.html"><button>Shop now</button></a>
+    </section>
+
+    <section id="feature" class = "section-p1">
+        <div class="fe-box">
+            <img src="images/features/f1.png" alt="">
+            <h6>Free shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f2.png" alt="">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="images/features/f6.png" alt="">
+            <h6>F24/7 Support</h6>
+        </div>
     </section>
 
     <section id="product1" class = "section-p1">
-        
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Modern Design</p>
         <div class="pro-container">
-            <div class="pro" onclick="window.location.href='product.html';">
+            <div class="pro">
                 <img src="images/products/f1.jpg" alt="">
                 <div class="des">
                     <span>adidas</span>
@@ -182,7 +217,19 @@
                 </div>
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>  
             </div>
-        
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair Services</h4>
+        <h2>Upto <span>70% Off</span> - All T-shirts & Accessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+    <section id="product1" class = "section-p1">
+        <h2>New Arrivals</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro-container">
             <div class="pro">
                 <img src="images/products/n1.jpg" alt="">
                 <div class="des">
@@ -330,10 +377,37 @@
         </div>
     </section>
 
-    <section id="pagination" class = "section-p1">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>Crazy Deals</h4>
+            <h2>Buy 1 Get 1 Free</h2>
+            <span>The best classic dress is on sale at Cara</span>
+            <button class="white">Learn More</button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Spring/Summer</h4>
+            <h2>Upcoming Season</h2>
+            <span>The best classic dress is on sale at Cara</span>
+            <button class="white">Collection</button>
+        </div>
+    </section>
+
+    <section id="banner3">
+        <div class="banner-box">
+            
+            <h2>SEASONAL SALE</h2>
+            <h3>Winter Collection 50% Off</h3>
+        </div>
+        <div class="banner-box banner-box2">
+            
+            <h2>New Footwear Collection</h2>
+            <h3>Spring/Summer 2022</h3>
+        </div>
+        <div class="banner-box banner-box3">
+            
+            <h2>T-Shirts</h2>
+            <h3>New Trendy Prints</h3>
+        </div>
     </section>
 
     <section id="newsletter" class="section-p1 section-m1">
@@ -375,7 +449,7 @@
         </div>
         <div class="col">
             <h4>My Account</h4>
-            <a href="loginPage.html">Sign In</a>
+            <a href="signup.html">Sign In</a>
             <a href="cart.html">View Cart</a>
             <a href="#">My Wishlist</a>
             <a href="#">Help</a>
@@ -388,6 +462,7 @@
     </footer>
 
     
-    <script src="script.js"></script>    
+    <script src="script.js"></script>  
+    <script src="nav.js"></script>  
 </body>
 </html>

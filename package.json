@@ -1,0 +1,26 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehtashiv1/E-commerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehtashiv1/E-commerce/issues"
+  },
+  "homepage": "https://github.com/mehtashiv1/E-commerce#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express.js": "^1.0.0",
+    "firebase": "^9.22.0",
+    "nodemon": "^2.0.22"
+  },
+  "description": ""
+}

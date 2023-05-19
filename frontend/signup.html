@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" id="logo" ref=""></a> 
+        <div>
+            <ul id="navbar">
+                <li><a class = "active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag" style="color: #070708;"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+            <a href="#"><i class="far fa-shopping-bag" style="color: #421585;"></i></a>
+        </div>
+    </section>
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form">
+                <h1 class="form-heading">New here? signup</h1>
+                <input type="text" autocomplete="off" id="name" placeholder="Full name">
+                <input type="email" autocomplete="off" id="email" placeholder="Email">
+                <input type="password" autocomplete="off" id="password" placeholder="Password">
+                <input type="number" autocomplete="off" id="number" placeholder="Phone number">
+                <span class="error">***this is an error</span>
+
+                <div>
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text">You agree to our <a href="#">Terms and Conditions</a></label>
+                </div> 
+                <button class="submit-btn">Sign up</button>
+                <a href="/login" class="other-form-link">Already have an account? Login here</a>
+            </div>
+            <img src="images/signup-bg.png" class="form-img" alt="">
+        </div>
+
+    </section>
+    <script src="common.js"></script>
+    <script src="form.js"></script>
+</body>    
