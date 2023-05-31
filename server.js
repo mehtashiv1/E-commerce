@@ -105,6 +105,13 @@ app.post('/login', (req, res) => {
 app.get('/product/:id', (req, res) => {
     res.sendFile("product.html", {root : "frontend"})
 })
+app.get('/cart', (req, res) => {
+    res.sendFile(path.join(staticPath, "cart.html"))
+})
+//add product
+app.get('/add-product', (req, res) => {
+    res.sendFile(path.join(staticPath, "addProduct.html"))
+})
 
 
 //404 routes
@@ -114,9 +121,6 @@ app.get('/404', (req, res) => {
 app.use((req,res) => {
   res.redirect('/404')
 })
-
-
-
 
 app.listen(3000, () => {
     console.log('listening on port 3000');
